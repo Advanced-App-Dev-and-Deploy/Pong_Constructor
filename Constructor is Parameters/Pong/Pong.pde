@@ -10,7 +10,7 @@ void setup()
   Ball yourBall = new Ball();
   //
   myBall.draw(width*1/10, height*1/3, width*1/25, color(31, 255, 3));
-  yourBall.draw(width*9/10, height*1/3, width*1/25, color(31, 255, 3)); //Notice Bug
+  yourBall.draw(width*9/10, height*1/3, width*1/25, color(randomColourDayTime(), randomColourDayTime(), randomColourNightMode())); //Notice Bug
   //
   println("Exciting ... not exciting."); //Ball Object immediately deleted, local variable
   //exit(); //Exit Button, TBA
@@ -28,3 +28,10 @@ void keyPressed() {
 void mousePressed() {
 }//End mousePressed()
 //
+int randomColourDayTime() {
+  return int ( random(255) );
+}//End randomColourDayTime()
+//
+int randomColourNightMode() {
+  return 0;
+}//End randomColourDayTime()

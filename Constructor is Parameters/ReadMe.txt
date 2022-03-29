@@ -1,4 +1,2 @@
 
-Bug with THIS
-
-Delete this note when fixed
+Note: draw() is sending parameters, not Constructor

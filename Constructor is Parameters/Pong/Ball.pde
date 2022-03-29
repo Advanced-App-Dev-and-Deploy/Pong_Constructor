@@ -5,10 +5,10 @@ class Ball
   color colour;
   //
   Ball (float xParameter, float yParameter, float diameterParameter, color colourParameter) { //Constructor Is ... hard coded, single visual object
-    x = xParameter;
-    y = yParameter;
-    diameter = diameterParameter;
-    colour = colourParameter; //Hexidecimal: #1FFF03, Night Mode Friendly
+    this.x = xParameter;
+    this.y = yParameter;
+    this.diameter = diameterParameter;
+    this.colour = colourParameter; //Hexidecimal: #1FFF03, Night Mode Friendly
   }//End Constructor
   //
   void draw() {
